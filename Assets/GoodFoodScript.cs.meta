@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 75d460e8a44628c49bbc5edbdeb795eb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - goodFoodPrefab: {fileID: 652313196159795888, guid: 6de85d9c399cba2459236d78f65ef913, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

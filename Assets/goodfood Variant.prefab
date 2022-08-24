@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8254197953100044008
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4272154020006920087, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_Color.b
+      value: 0.14998388
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272154020006920087, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272154020006920087, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309244626737216490, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309244626737216490, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637464, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_Name
+      value: goodfood Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637467, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637467, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637467, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637467, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637467, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637467, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637467, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637467, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637467, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637467, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899594634849637467, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+--- !u!1 &652313196159795888 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8899594634849637464, guid: be77f04d6004b434ca9fc7bbf79190d8, type: 3}
+  m_PrefabInstance: {fileID: 8254197953100044008}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &304280508
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652313196159795888}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &304280509
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652313196159795888}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &304280507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652313196159795888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75d460e8a44628c49bbc5edbdeb795eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goodFoodPrefab: {fileID: 0}
+  spawnInterval: 3
