@@ -8,12 +8,7 @@ public class GoodFoodScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 6; i++)
-        {
-            Vector3 position = new Vector3(Random.Range(-15.0F,15.0F),
-                 Random.Range(-10.0F,10.0F), 0);
-            Instantiate(goodFoodPrefab,position,Quaternion.identity);
-        }
+
     }
 
     // Update is called once per frame
