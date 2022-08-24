@@ -17,6 +17,7 @@ public class StrengthTextScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (strength < 0) strength = 0;
         MyText.text = strength + "/8 strength";
     }
 }
