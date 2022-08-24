@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BadFoodScript : MonoBehaviour
 {
-    public GameObject badFoodPrefab;
+    public StrengthTextScript strengthScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,6 @@ public class BadFoodScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
+        strengthScript.strength--;
     }
 }

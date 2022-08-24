@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GoodFoodScript : MonoBehaviour
 {
-    public GameObject goodFoodPrefab;
+    public StrengthTextScript strengthScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,14 +17,9 @@ public class GoodFoodScript : MonoBehaviour
     {
         
     }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
-    }
-
-    void SpawnGoodFood()
-    {
-
+        strengthScript.strength++;
     }
 }

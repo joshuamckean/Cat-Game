@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreScript : MonoBehaviour
+public class StrengthTextScript : MonoBehaviour
 {
     public Text MyText;
-    private int strength;
+    public int strength;
     // Start is called before the first frame update
     void Start()
     {
+        strength = 0;
         MyText.text = strength + "/8 strength";
     }
 
@@ -17,10 +18,5 @@ public class ScoreScript : MonoBehaviour
     void Update()
     {
         MyText.text = strength + "/8 strength";
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        strength += 1;
     }
 }
