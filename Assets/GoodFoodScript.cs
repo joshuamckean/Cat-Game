@@ -24,12 +24,6 @@ public class GoodFoodScript : MonoBehaviour
 
     void SpawnGoodFood()
     {
-        var foodPosition = transform.position;
-        foodPosition.x = Random.Range(-9, 9);
-        foodPosition.y = Random.Range(-5,5);
 
-        /*Vector3 position = new Vector3(Random.Range(-10, 10),
-            Random.Range(-10,10), 0);*/
-        Instantiate(goodFoodPrefab, foodPosition, transform.rotation);
     }
 }
