@@ -132,4 +132,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goodFoodPrefab: {fileID: 0}
-  spawnInterval: 3
