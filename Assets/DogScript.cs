@@ -36,7 +36,7 @@ public class DogScript : MonoBehaviour
         //transform.position = Vector2.MoveTowards(transform.position, cat.transform.position, speed * Time.deltaTime);
     }
 
-    void OnTriggerEnter2D(Collider2D collission)
+    void OnCollisionEnter2D(Collision2D collission)
     {
         if (catStrong)
         {
