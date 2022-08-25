@@ -6,7 +6,7 @@ public class DogScript : MonoBehaviour
 {
     public bool catStrong;
     public StrengthTextScript strengthScript;
-    [SerializeField] private GameObject self;
+    [SerializeField] private GameObject dog;
     [SerializeField] private GameObject cat;
     public Rigidbody2D rigidBody;
     public float minDistance = 0.09f;
@@ -47,7 +47,7 @@ public class DogScript : MonoBehaviour
         {
             if (collission.gameObject.tag == "cat")
             {
-                Destroy(self);
+                Destroy(dog);
             }
         }
         else
