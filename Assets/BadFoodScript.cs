@@ -20,7 +20,10 @@ public class BadFoodScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
-        strengthScript.strength--;
+        if (collision.gameObject.tag == "cat")
+        {
+            Destroy(collision.gameObject);
+            strengthScript.strength--;
+        }
     }
 }

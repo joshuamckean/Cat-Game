@@ -35,7 +35,10 @@ public class DogScript : MonoBehaviour
         }
         else
         {
-            Destroy(cat);
+            if (collission.gameObject.tag == "cat")
+            {
+                Destroy(collission.gameObject);
+            }
         }
     }
 }
