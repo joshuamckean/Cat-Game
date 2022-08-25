@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 1534043140, guid: 405ded38fc9b52846b8fb6388d0c7307, type: 3}
       propertyPath: strengthScript
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 570954873}
     - target: {fileID: 7459867694076559096, guid: 405ded38fc9b52846b8fb6388d0c7307, type: 3}
       propertyPath: m_Name
       value: badfood Variant
@@ -430,7 +430,7 @@ PrefabInstance:
     - target: {fileID: 304280507, guid: 6de85d9c399cba2459236d78f65ef913, type: 3}
       propertyPath: strengthScript
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 570954873}
     - target: {fileID: 652313196159795888, guid: 6de85d9c399cba2459236d78f65ef913, type: 3}
       propertyPath: m_Name
       value: goodfood Variant
@@ -618,7 +618,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.34047
+  orthographic size: 11.151584
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 570954875}
   - component: {fileID: 570954874}
   - component: {fileID: 570954873}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StrengthText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,8 +685,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -440, y: -198}
-  m_SizeDelta: {x: 17.4696, y: 5.1392}
+  m_AnchoredPosition: {x: 0, y: 170}
+  m_SizeDelta: {x: 171.62, y: 74.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &570954873
 MonoBehaviour:
@@ -749,8 +749,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 2
-  m_fontSizeBase: 2
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -811,7 +811,7 @@ GameObject:
   - component: {fileID: 933379852}
   - component: {fileID: 933379851}
   - component: {fileID: 933379850}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,7 +887,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933379848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 88.73819}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -897,8 +897,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 878.7999, y: 414}
+  m_AnchoredPosition: {x: 0.0541, y: 0}
+  m_SizeDelta: {x: 958.795, y: 452.9166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1958854074
 GameObject:
@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 1958854078}
   m_Layer: 0
   m_Name: catbody
-  m_TagString: Untagged
+  m_TagString: cat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
