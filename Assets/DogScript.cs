@@ -60,7 +60,7 @@ public class DogScript : MonoBehaviour
         {
             if (collission.gameObject.tag == "cat")
             {
-                Destroy(collission.gameObject);
+                Destroy(cat);
             }
         }
     }
