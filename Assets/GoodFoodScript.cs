@@ -21,7 +21,7 @@ public class GoodFoodScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "cat")
         {
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
             strengthScript.strength++;
         }
     }
