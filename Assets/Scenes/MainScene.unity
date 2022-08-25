@@ -1554,7 +1554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5ae49859a3fd64abf710767e012581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cat: {fileID: 0}
-  rigidBody: {fileID: 0}
+  cat: {fileID: 1958854074}
+  rigidBody: {fileID: 2027504483}
   minDistance: 0.09
   speed: 5
