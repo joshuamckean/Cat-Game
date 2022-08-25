@@ -28,11 +28,17 @@ public class DogScript : MonoBehaviour
         {
 
         }
-        else
+        else if (!(catStrong))
         {
             Vector3 dir = (cat.transform.position - rigidBody.transform.position).normalized;
             if (Vector3.Distance(cat.transform.position, rigidBody.transform.position) > minDistance)
                 rigidBody.MovePosition(rigidBody.transform.position + dir * speed * Time.fixedDeltaTime);
+        }
+        else if (catStrong)
+        {
+            Vector3 dir = (cat.transform.position - rigidBody.transform.position).normalized;
+            if (Vector3.Distance(cat.transform.position, rigidBody.transform.position) > minDistance)
+                rigidBody.MovePosition(rigidBody.transform.position + dir * -0.5f *speed * Time.fixedDeltaTime);
         }
         if (strengthScript.strength >= 8) 
         {
