@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class dogChase : MonoBehaviour
+public class DogScript : MonoBehaviour
 {
     [SerializeField] private GameObject cat;
     public Rigidbody2D rigidBody;
@@ -12,8 +12,8 @@ public class dogChase : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody2D>();
         transform.position = new Vector2(Random.Range(-5, 5), Random.Range(-5, 5));
+        rigidBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
