@@ -12,13 +12,13 @@ public class StrengthTextScript : MonoBehaviour
     void Start()
     {
         strength = 0;
-        MyText.text = strength + "/8 strength";
+        MyText.SetText(strength + "/8 strength");
     }
 
     // Update is called once per frame
     void Update()
     {
         if (strength < 0) strength = 0;
-        MyText.text = strength + "/8 strength";
+        MyText.SetText(strength + "/8 strength");
     }
 }
