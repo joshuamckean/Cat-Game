@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DogScript : MonoBehaviour
 {
     public bool catStrong;
     public StrengthTextScript strengthScript;
-    [SerializeField] private GameObject dog;
-    [SerializeField] private GameObject cat;
+    [SerializeField] private GameObject dog, cat;
+    [SerializeField] TextMeshProUGUI statusText;
     public Rigidbody2D rigidBody;
     public float minDistance = 0.09f;
     public float speed = 5f;
@@ -54,6 +55,8 @@ public class DogScript : MonoBehaviour
             if (collission.gameObject.tag == "cat")
             {
                 Destroy(dog);
+                statusText.SetText("Game Over! You WIN!");
+                statusText.color = new Color32(199, 234, 70, 255);
             }
         }
         else
@@ -61,6 +64,7 @@ public class DogScript : MonoBehaviour
             if (collission.gameObject.tag == "cat")
             {
                 Destroy(cat);
+                statusText.SetText("Game Over! You LOSE!");
             }
         }
     }
