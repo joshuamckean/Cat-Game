@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class dogChase : MonoBehaviour
+public class DogScript : MonoBehaviour
 {
     [SerializeField] private GameObject cat;
     public Rigidbody2D rigidBody;
