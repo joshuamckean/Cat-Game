@@ -1817,8 +1817,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   catStrong: 0
-  strengthScript: {fileID: 0}
-  dog: {fileID: 0}
+  strengthScript: {fileID: 570954873}
+  dog: {fileID: 2027504479}
   cat: {fileID: 1958854074}
   rigidBody: {fileID: 2027504483}
   minDistance: 0.09
