@@ -5,6 +5,8 @@ using UnityEngine;
 public class DogScript : MonoBehaviour
 {
     public bool catStrong;
+    public StrengthTextScript strengthScript;
+    [SerializeField] private GameObject self;
     [SerializeField] private GameObject cat;
     public Rigidbody2D rigidBody;
     public float minDistance = 0.09f;
@@ -32,7 +34,10 @@ public class DogScript : MonoBehaviour
             if (Vector3.Distance(cat.transform.position, rigidBody.transform.position) > minDistance)
                 rigidBody.MovePosition(rigidBody.transform.position + dir * speed * Time.fixedDeltaTime);
         }
-        
+        if (strengthScript.strength >= 8) 
+        {
+            catStrong = true;
+        }
         //transform.position = Vector2.MoveTowards(transform.position, cat.transform.position, speed * Time.deltaTime);
     }
 
@@ -40,7 +45,10 @@ public class DogScript : MonoBehaviour
     {
         if (catStrong)
         {
-
+            if (collission.gameObject.tag == "cat")
+            {
+                Destroy(self);
+            }
         }
         else
         {
