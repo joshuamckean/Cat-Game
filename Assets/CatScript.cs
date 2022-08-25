@@ -13,7 +13,7 @@ public class CatScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0,Input.GetAxis("Vertical")*0.1f,0);
-        transform.Translate(Input.GetAxis("Horizontal")*0.1f,0,0);
+        transform.Translate(0,Input.GetAxis("Vertical")*0.08f,0);
+        transform.Translate(Input.GetAxis("Horizontal")*0.08f,0,0);
     }
 }
