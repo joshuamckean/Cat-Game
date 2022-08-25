@@ -21,13 +21,22 @@ public class DogScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 dir = (cat.transform.position - rigidBody.transform.position).normalized;
-        if (Vector3.Distance(cat.transform.position, rigidBody.transform.position) > minDistance)
-            rigidBody.MovePosition(rigidBody.transform.position + dir * speed * Time.fixedDeltaTime);
+        //Debug.Log(cat.transform.position);
+        if (cat == null)
+        {
+
+        }
+        else
+        {
+            Vector3 dir = (cat.transform.position - rigidBody.transform.position).normalized;
+            if (Vector3.Distance(cat.transform.position, rigidBody.transform.position) > minDistance)
+                rigidBody.MovePosition(rigidBody.transform.position + dir * speed * Time.fixedDeltaTime);
+        }
+        
         //transform.position = Vector2.MoveTowards(transform.position, cat.transform.position, speed * Time.deltaTime);
     }
 
-    void OnTriggerEnter2D(Collider2D collission)
+    void OnCollisionEnter2D(Collision2D collission)
     {
         if (catStrong)
         {
