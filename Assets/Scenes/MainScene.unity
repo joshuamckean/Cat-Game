@@ -1062,8 +1062,8 @@ GameObject:
   - component: {fileID: 1958854075}
   - component: {fileID: 1958854077}
   - component: {fileID: 1958854076}
-  - component: {fileID: 1958854079}
   - component: {fileID: 1958854078}
+  - component: {fileID: 1958854080}
   m_Layer: 0
   m_Name: catbody
   m_TagString: cat
@@ -1170,8 +1170,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!60 &1958854079
+  m_Constraints: 4
+--- !u!60 &1958854080
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1181,7 +1181,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1400,7 +1400,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2027504484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1428,7 +1428,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
