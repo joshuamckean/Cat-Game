@@ -57,13 +57,6 @@ public class DogScript : MonoBehaviour
                 Application.LoadLevel(0);
             }
         }
-        if (dogDead)
-        {
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                Application.LoadLevel(0);
-            }
-        }
         //transform.position = Vector2.MoveTowards(transform.position, cat.transform.position, speed * Time.deltaTime);
     }
 

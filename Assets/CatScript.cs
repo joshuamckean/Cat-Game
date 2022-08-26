@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CatScript : MonoBehaviour
 {
+    [SerializeField] private DogScript dogScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,15 @@ public class CatScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(0,Input.GetAxis("Vertical")*0.16f,0);
-        transform.Translate(Input.GetAxis("Horizontal")*0.16f,0,0);
+        transform.Translate(0, Input.GetAxis("Vertical") * 0.16f, 0);
+        transform.Translate(Input.GetAxis("Horizontal") * 0.16f, 0, 0);
+
+        if (dogScript.dogDead)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Application.LoadLevel(0);
+            }
+        }
     }
 }
