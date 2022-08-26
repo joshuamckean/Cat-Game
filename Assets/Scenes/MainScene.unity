@@ -395,6 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d11a1233dd73648b8680babd87e05b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dogScript: {fileID: 0}
 --- !u!50 &193568365
 Rigidbody2D:
   serializedVersion: 4
@@ -4977,6 +4978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d11a1233dd73648b8680babd87e05b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dogScript: {fileID: 2027504484}
 --- !u!212 &1958854077
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5211,6 +5213,8 @@ MonoBehaviour:
   rigidBody: {fileID: 2027504483}
   minDistance: 0.09
   speed: 5
+  catDead: 0
+  dogDead: 0
 --- !u!60 &2027504485
 PolygonCollider2D:
   m_ObjectHideFlags: 0
