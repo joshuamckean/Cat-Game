@@ -21,10 +21,14 @@ public class StrengthTextScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (poison == 2) 
+        if (poison == 2)
         {
             Destroy(cat);
-            statusText.SetText("Game Over! You were poisoned to death!");
+            statusText.SetText("Game Over! You were poisoned to death! Press 'R' to restart.");
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Application.LoadLevel(0);
+            }
         }
         if (strength < 0) strength = 0;
         strengthText.SetText(strength + "/8 strength");

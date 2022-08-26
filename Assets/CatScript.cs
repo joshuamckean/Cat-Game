@@ -7,7 +7,7 @@ public class CatScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10));
+        transform.position = new Vector3(Random.Range(-10, 10), Random.Range(-8, 8));
     }
 
     // Update is called once per frame
