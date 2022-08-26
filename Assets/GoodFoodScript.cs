@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class GoodFoodScript : MonoBehaviour
 {
     public StrengthTextScript strengthScript;
+    AudioSource eatenGood;
     // Start is called before the first frame update
     void Start()
     {
-
+        eatenGood = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class GoodFoodScript : MonoBehaviour
         {
             Destroy(gameObject);
             strengthScript.strength++;
+            eatenGood.Play();
         }
     }
 }

@@ -7,11 +7,13 @@ using TMPro;
 public class StrengthTextScript : MonoBehaviour
 {
     public TextMeshProUGUI strengthText, statusText, poisonText;
+    AudioSource catPoisoned;
     public int strength, poison;
     [SerializeField] private GameObject cat;
     // Start is called before the first frame update
     void Start()
     {
+        catPoisoned = GetComponent<AudioSource>();
         strength = 0;
         strengthText.SetText(strength + "/8 strength");
         poisonText.SetText(poison + "/2 poison");
@@ -24,6 +26,7 @@ public class StrengthTextScript : MonoBehaviour
         if (poison >= 2)
         {
             Destroy(cat);
+            //catPoisoned.Play();
             statusText.SetText("Game Over! You were poisoned to death! Press 'R' to restart.");
             if (Input.GetKeyDown(KeyCode.R))
             {

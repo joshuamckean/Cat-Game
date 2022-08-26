@@ -6,6 +6,7 @@ using TMPro;
 public class DogScript : MonoBehaviour
 {
     public bool catStrong;
+    AudioSource catDies;
     public StrengthTextScript strengthScript;
     [SerializeField] private GameObject dog, cat;
     [SerializeField] TextMeshProUGUI statusText;
@@ -18,6 +19,7 @@ public class DogScript : MonoBehaviour
     void Start()
     {
         catStrong = false;
+        catDies = GetComponent<AudioSource>();
         transform.position = new Vector2(Random.Range(-10, 10), Random.Range(-8, 8));
         rigidBody = GetComponent<Rigidbody2D>();
     }
@@ -79,6 +81,7 @@ public class DogScript : MonoBehaviour
             {
                 Destroy(cat);
                 catDead = true;
+                catDies.Play();
                 statusText.SetText("The dog ate you! You LOSE! Press 'R' to restart.");
             }
         }
