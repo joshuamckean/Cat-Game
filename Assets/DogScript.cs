@@ -45,6 +45,10 @@ public class DogScript : MonoBehaviour
         {
             catStrong = true;
         }
+        if (strengthScript.strength < 8)
+        {
+            catStrong = false;
+        }
         //transform.position = Vector2.MoveTowards(transform.position, cat.transform.position, speed * Time.deltaTime);
     }
 
