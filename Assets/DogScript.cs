@@ -38,6 +38,7 @@ public class DogScript : MonoBehaviour
         }
         else if (catStrong)
         {
+            //Dog runs away when cat is strong
             Vector3 dir = (cat.transform.position - rigidBody.transform.position).normalized;
             if (Vector3.Distance(cat.transform.position, rigidBody.transform.position) > minDistance)
                 rigidBody.MovePosition(rigidBody.transform.position + dir * -0.5f * speed * Time.fixedDeltaTime);
