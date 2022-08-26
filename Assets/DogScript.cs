@@ -8,6 +8,7 @@ public class DogScript : MonoBehaviour
     public bool catStrong;
     AudioSource catDies;
     public StrengthTextScript strengthScript;
+    [SerializeField] CatScript catWinsSound;
     [SerializeField] private GameObject dog, cat;
     [SerializeField] TextMeshProUGUI statusText;
     public Rigidbody2D rigidBody;
@@ -73,6 +74,7 @@ public class DogScript : MonoBehaviour
                 dogDead = true;
                 statusText.SetText("You ate the dog! You WIN! Press 'R' to restart.");
                 statusText.color = new Color32(0, 100, 0, 255);
+                catWinsSound.catWins.Play();
             }
         }
         else

@@ -5,10 +5,12 @@ using UnityEngine;
 public class CatScript : MonoBehaviour
 {
     [SerializeField] private DogScript dogScript;
+    public AudioSource catWins;
     // Start is called before the first frame update
     void Start()
     {
         transform.position = new Vector3(Random.Range(-10, 10), Random.Range(-8, 8));
+        catWins = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -19,6 +21,8 @@ public class CatScript : MonoBehaviour
 
         if (dogScript.dogDead)
         {
+            if (!catWins.isPlaying)
+                catWins.Play();
             if (Input.GetKeyDown(KeyCode.R))
             {
                 Application.LoadLevel(0);
