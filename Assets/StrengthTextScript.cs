@@ -24,7 +24,7 @@ public class StrengthTextScript : MonoBehaviour
         if (poison == 2) 
         {
             Destroy(cat);
-            statusText.SetText("Game Over! You lose!");
+            statusText.SetText("Game Over! You were poisoned to death!");
         }
         if (strength < 0) strength = 0;
         strengthText.SetText(strength + "/8 strength");
