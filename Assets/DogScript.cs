@@ -59,8 +59,8 @@ public class DogScript : MonoBehaviour
             if (collission.gameObject.tag == "cat")
             {
                 Destroy(dog);
-                statusText.SetText("Game Over! You WIN!");
-                statusText.color = new Color32(199, 234, 70, 255);
+                statusText.SetText("You ate the dog! You WIN!");
+                statusText.color = new Color32(0, 100, 0, 255);
             }
         }
         else
@@ -68,7 +68,7 @@ public class DogScript : MonoBehaviour
             if (collission.gameObject.tag == "cat")
             {
                 Destroy(cat);
-                statusText.SetText("Game Over! You LOSE!");
+                statusText.SetText("The dog ate you! You LOSE!");
             }
         }
     }
