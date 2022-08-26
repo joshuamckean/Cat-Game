@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BadFoodScript : MonoBehaviour
 {
-    public StrengthTextScript strengthScript;
+    public StrengthTextScript strengthScript, poisonScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +22,9 @@ public class BadFoodScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "cat")
         {
+            if (strengthScript.strength <= 0) {
+                poisonScript.poison++;
+            }
             Destroy(gameObject);
             strengthScript.strength--;
         }
